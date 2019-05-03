@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sherman's March to the Sea | Facts and Info</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://raw.githubusercontent.com/davist11/jQuery-One-Page-Nav/master/jquery.nav.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+            <a class="navbar-brand" href="./index.html">Sherman's March to the Sea</a>
+            <ul id="nav-items" class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#civilWarPics">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#works-cited">Works Cited</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="civilWarPics" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#civilWarPics" data-slide-to="0" class="active"></li>
+            <li data-target="#civilWarPics" data-slide-to="1"></li>
+            <li data-target="#civilWarPics" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner" style="background-color: rgba(55, 55, 55, 1);">
+            <div class="carousel-item active">
+                <center>
+                    <img style="height: 525px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Sherman_sea_1868.jpg/800px-Sherman_sea_1868.jpg" alt="Shermans March to the Sea">
+                </center>
+                <div class="carousel-caption">
+                    <h3>Sherman's March to the Sea (1868)</h3>
+                    <p>Source: Library of Congress Prints and Photographs Divsion</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <center>
+                    <img style="height: 525px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Savannah_Campaign.png/800px-Savannah_Campaign.png" alt="Savannah Campaign">
+                </center>
+                <div class="carousel-caption">
+                    <h3 style="color: black;">The Savannah Campaign</h3>
+                    <p style="color: black;">Source: Hal Jespersen</p>
+                </div>
+            </div> 
+            <div class="carousel-item">
+                <center>
+                    <img style="height: 525px;" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Sherman_railroad_destroy_noborder.jpg" alt="Sherman Destroying Railroad">
+                </center>
+                <div class="carousel-caption">
+                    <h3>Sherman's Men Destroying Railroad</h3>
+                    <p>Source: George N. Barnard</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#civilWarPics" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#civilWarPics" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>      
+        </div>
+        <div id="works-cited" style="padding-top: 25px; " class="container">
+            <h1 class="display-4" style="text-align: center;">Works Cited</h1>
+        </div>
+        <script>
+            $('#nav-items').onePageNav({
+                currentClass: 'active',
+                changeHash: false,
+                scrollSpeed: 750,
+                scrollThreshold: 0.5,
+                filter: '',
+                easing: 'swing',
+            });
+        </script>
+    </body>
+</html>
